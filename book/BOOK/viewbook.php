@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
 <form action="" method="get">
     <label for="search">Search Book: </label>
     <input type="search" name="search" id="search" value="<?= $search ?>">
-    <input type="submit" value="Search">
+    <input type="submit" value="Search"><br>
     <label for="genre_filter">Filter By Genre:</label>
     <select name="genre_filter" id="genre_filter">
         <option value="">--Select Genre--</option>
@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
      <input type="submit" value="Filter">
     
 </form>
-
+<br><br>
 <a href="addbook.php">Add book</a>
 <table border="1">
     <tr>
@@ -65,4 +65,5 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
 </table>
     
 </body>
+
 </html>
